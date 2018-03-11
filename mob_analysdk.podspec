@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'mob_analysdk'
-  s.version               = "1.0.0"
+  s.version               = "1.1.0"
   s.summary               = 'mob.com 官方提供的统计SDK'
   s.license               = 'MIT'
   s.author                = { "mob" => "mobproducts@163.com" }

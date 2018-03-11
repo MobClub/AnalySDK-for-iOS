@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E201D00B2019C335002DAB28 /* GameAnalyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E201D00A2019C335002DAB28 /* GameAnalyViewController.m */; };
 		E23F9C6E1EF8CE8700AD4E6F /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F9C6D1EF8CE8700AD4E6F /* libz.1.2.5.tbd */; };
 		E23F9C701EF8CE9200AD4E6F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E23F9C6F1EF8CE9200AD4E6F /* libstdc++.tbd */; };
 		E2836FB61F96084C0068E21F /* AnalySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2836FB31F96084C0068E21F /* AnalySDK.framework */; };
@@ -118,6 +119,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E201D0092019C335002DAB28 /* GameAnalyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameAnalyViewController.h; sourceTree = "<group>"; };
+		E201D00A2019C335002DAB28 /* GameAnalyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameAnalyViewController.m; sourceTree = "<group>"; };
 		E23F9C6D1EF8CE8700AD4E6F /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		E23F9C6F1EF8CE9200AD4E6F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		E2836FB31F96084C0068E21F /* AnalySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnalySDK.framework; sourceTree = "<group>"; };
@@ -266,6 +269,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E201D0082019C2F8002DAB28 /* GameAnalyVC */ = {
+			isa = PBXGroup;
+			children = (
+				E201D0092019C335002DAB28 /* GameAnalyViewController.h */,
+				E201D00A2019C335002DAB28 /* GameAnalyViewController.m */,
+			);
+			path = GameAnalyVC;
+			sourceTree = "<group>";
+		};
 		E23F9C6C1EF8CE8700AD4E6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +340,7 @@
 				E2F45EFC1EE8ED6E00659B3E /* View */,
 				E2F45ECD1EE8EC5F00659B3E /* Main */,
 				E2F45ED11EE8EC8E00659B3E /* Scene */,
+				E201D0082019C2F8002DAB28 /* GameAnalyVC */,
 				E2F45EB81EE8EB3F00659B3E /* Main.storyboard */,
 				E2F45EBB1EE8EB3F00659B3E /* Assets.xcassets */,
 				E2F45EBD1EE8EB3F00659B3E /* LaunchScreen.storyboard */,
@@ -708,6 +721,7 @@
 				E2F45FB01EE8EE9900659B3E /* UIViewController+MLDBackItemHandler.m in Sources */,
 				E2F45EF01EE8EC8E00659B3E /* MLDSceneViewController.m in Sources */,
 				E2F45F061EE8ED6E00659B3E /* RightImageButton.m in Sources */,
+				E201D00B2019C335002DAB28 /* GameAnalyViewController.m in Sources */,
 				E2F45EF81EE8EC8E00659B3E /* MLDVideoDetailTableViewController.m in Sources */,
 				E2F45F041EE8ED6E00659B3E /* CustomButton.m in Sources */,
 				E2F45EB11EE8EB3F00659B3E /* main.m in Sources */,
@@ -826,7 +840,6 @@
 				DEVELOPMENT_TEAM = Q87QUX3533;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AnalySDKDemo",
 					"$(PROJECT_DIR)/../SDK/**",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AnalySDKDemo/ALSDKPrefixHeader.pch";
@@ -835,7 +848,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mob.product.AnalySDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7ca920fb-ae43-4ba6-a96e-14db157e0b13";
+				PROVISIONING_PROFILE = "7f1ad62f-9fb5-49cc-b09f-87019a131bd1";
 				PROVISIONING_PROFILE_SPECIFIER = MobProvisioningProfiles;
 			};
 			name = Debug;
@@ -844,11 +857,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q87QUX3533;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = LW5266U92D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AnalySDKDemo",
 					"$(PROJECT_DIR)/../SDK/**",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AnalySDKDemo/ALSDKPrefixHeader.pch";
@@ -857,8 +869,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mob.product.AnalySDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7ca920fb-ae43-4ba6-a96e-14db157e0b13";
-				PROVISIONING_PROFILE_SPECIFIER = MobProvisioningProfiles;
+				PROVISIONING_PROFILE = "dd7fab4b-8863-42f7-be15-cfb6b1592b6d";
+				PROVISIONING_PROFILE_SPECIFIER = AnalySDKInHouseDistribution;
 			};
 			name = Release;
 		};
